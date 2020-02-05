@@ -13,5 +13,5 @@ RUN wget http://xdebug.org/files/xdebug-2.9.1.tgz \
     && phpize \
     && ./configure \
     && make \
-    && cp modules/xdebug.so /usr/lib/php/20170718 \
-    && echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so' >> /etc/php/7.2/cli/php.ini
+    && sudo cp modules/xdebug.so /usr/lib/php/20170718 \
+    && sudo echo -e '\nzend_extension = /usr/lib/php/20170718/xdebug.so' >> /etc/php/7.2/cli/php.ini
